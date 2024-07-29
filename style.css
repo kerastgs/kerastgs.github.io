@@ -1,21 +1,22 @@
 html {
     scroll-behavior: smooth;
-  }
-  
-  body {
+}
+
+body {
     background-image: linear-gradient(#ff7e5f, #feb47b, #ff6a88, #ff9a9e, #ff7e5f);
     background-size: cover;
     overflow: hidden;
-  }
-  
-  * {
+}
+
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     color: rgb(56, 56, 56);
-  }
-  
-  .open {
+}
+
+.open {
     background-image: linear-gradient(#ff7e5f, #feb47b, #ff6a88, #ff9a9e, #ff7e5f);
     height: 100vh;
     width: 100vw;
@@ -26,87 +27,87 @@ html {
     align-items: center;
     align-content: center;
     justify-content: center;
-    z-index: 0;
+    z-index: 1;
     transition: 0.5s all ease;
-  }
-  
-  .open h2 {
+}
+
+.open h2 {
     margin-bottom: 20px;
     color: rgb(56, 56, 56);
     text-align: center;
     max-width: 600px;
-  }
-  
-  .open .card {
+}
+
+.open .card {
     background-color: white;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 10px 10px 30px rgba(0,0,0,0.2);
     text-align: center;
-  }
-  
-  .open .card h3 {
+}
+
+.open .card h3 {
     margin-top: 20px;
-  }
-  
-  .open .card img {
+}
+
+.open .card img {
     height: 100px;
-  }
-  
-  .atas {
+}
+
+.atas {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  .atas img {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.atas img {
     height: 200px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     padding: 20px 30px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 10px 30px rgba(0, 0, 0, 0.2);
-  }
-  
-  .atas h2 {
+}
+
+.atas h2 {
     font-size: 1.5em;
     padding: 20px 30px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 10px 30px rgba(0, 0, 0, 0.2);
-  }
-  
-  .kartu-ucapan {
-    display: block;
+}
+
+.kartu-ucapan {
     text-align: center;
     color: rgb(56, 56, 56);
     background-color: white;
     font-weight: bold;
-    font-size: 1.5em;
-    padding: 50px 30px;
-    margin: 40px 20px;
+    font-size: 1.2em;
+    padding: 20px;
+    margin: 20px 0;
     border-radius: 20px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
-  }
-  
-  .kartu-ucapan {
-    display: block;
-    background-size: cover;
-    text-align: center;
-    width: 93%;
-  }
+    width: 90%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-  .foto{
-   width: 90%;
-   padding-top: 30px;
-  }
-  
-  @media (max-width: 768px) {
+.foto {
+    width: 90%;
+    padding-top: 30px;
+    max-width: 400px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
     .atas img, .atas h2, .kartu-ucapan {
-        width: 90%;
-        margin: 20px auto;
+        width: 100%;
+        margin: 10px 0;
         font-size: 1.2em;
     }
 
@@ -115,7 +116,8 @@ html {
     }
 
     .kartu-ucapan {
-        padding: 30px 20px;
+        padding: 15px;
+        font-size: 1em;
     }
 
     .open .card img {
@@ -129,8 +131,8 @@ html {
 
 @media (max-width: 480px) {
     .atas img, .atas h2, .kartu-ucapan {
-        width: 95%;
-        margin: 10px auto;
+        width: 100%;
+        margin: 5px 0;
         font-size: 1em;
     }
 
@@ -139,7 +141,8 @@ html {
     }
 
     .kartu-ucapan {
-        padding: 20px 10px;
+        padding: 10px;
+        font-size: 0.9em;
     }
 
     .open .card img {
