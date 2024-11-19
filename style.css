@@ -6,11 +6,11 @@ body {
     background-image: linear-gradient(#ff7e5f, #feb47b, #ff6a88, #ff9a9e, #ff7e5f);
     background-size: cover;
     overflow: hidden;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     color: rgb(56, 56, 56);
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 .open {
@@ -22,6 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-content: center;
     justify-content: center;
     z-index: 1;
     transition: 0.5s all ease;
@@ -29,8 +30,9 @@ body {
 
 .open h2 {
     margin-bottom: 20px;
+    color: rgb(56, 56, 56);
     text-align: center;
-    max-width: 90%; /* Responsif */
+    max-width: 600px;
 }
 
 .open .card {
@@ -39,7 +41,6 @@ body {
     border-radius: 10px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 90%; /* Responsif */
 }
 
 .open .card h3 {
@@ -47,12 +48,11 @@ body {
 }
 
 .open .card img {
-    height: auto; /* Responsif */
-    max-width: 100%; /* Responsif */
+    height: 100px;
 }
 
 .atas {
-    height: auto; /* Responsif */
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,8 +62,7 @@ body {
 }
 
 .atas img {
-    max-width: 100%; /* Responsif */
-    height: auto; /* Responsif */
+    height: 200px;
     margin-bottom: 20px;
     padding: 20px 30px;
     background-color: white;
@@ -72,7 +71,7 @@ body {
 }
 
 .atas h2 {
-    font-size: 2em; /* Ukuran font responsif */
+    font-size: 1.5em;
     padding: 20px 30px;
     background-color: white;
     border-radius: 20px;
@@ -81,6 +80,7 @@ body {
 
 .kartu-ucapan {
     text-align: center;
+    color: rgb(56, 56, 56);
     background-color: white;
     font-weight: bold;
     font-size: 1.2em;
@@ -88,16 +88,16 @@ body {
     margin: 20px 0;
     border-radius: 20px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
-    width: 90%; /* Responsif */
-    max-width: 800px; /* Batas lebar maksimum */
+    width: 90%;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .foto {
-    width: 90%; /* Responsif */
+    width: 90%;
     padding-top: 30px;
-    max-width: 400px; /* Batas lebar maksimum */
+    max-width: 400px;
 }
 
 /* Media Queries */
@@ -105,24 +105,24 @@ body {
     .atas img, .atas h2, .kartu-ucapan {
         width: 100%;
         margin: 10px 0;
-        font-size: 1.2em; /* Ukuran font responsif */
+        font-size: 1.2em;
     }
 
     .atas img {
-        height: 20vh; /* Responsif */
+        height: 150px;
     }
 
     .kartu-ucapan {
         padding: 15px;
-        font-size: 1em; /* Ukuran font responsif */
+        font-size: 1em;
     }
 
     .open .card img {
-        height: 8vw; /* Responsif */
+        height: 80px;
     }
 
     .open .card h3 {
-        font-size: 1em; /* Ukuran font responsif */
+        font-size: 1em;
     }
 }
 
@@ -130,14 +130,23 @@ body {
     .atas img, .atas h2, .kartu-ucapan {
         width: 100%;
         margin: 5px 0;
-        font-size: 1em; /* Ukuran font responsif */
+        font-size: 1em;
     }
 
     .atas img {
-        height: 15vh; /* Responsif */
+        height: 120px;
     }
 
     .kartu-ucapan {
         padding: 10px;
         font-size: 0.9em;
     }
+
+    .open .card img {
+        height: 60px;
+    }
+
+    .open .card h3 {
+        font-size: 0.9em;
+    }
+}
