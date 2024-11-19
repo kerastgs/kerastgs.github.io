@@ -30,7 +30,7 @@ body {
 .open h2 {
     margin-bottom: 20px;
     text-align: center;
-    max-width: 600px;
+    max-width: 90%; /* Responsif */
 }
 
 .open .card {
@@ -39,6 +39,7 @@ body {
     border-radius: 10px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
     text-align: center;
+    width: 90%; /* Responsif */
 }
 
 .open .card h3 {
@@ -46,11 +47,12 @@ body {
 }
 
 .open .card img {
-    height: 10vw; /* Responsive height */
+    height: auto; /* Responsif */
+    max-width: 100%; /* Responsif */
 }
 
 .atas {
-    height: 100vh;
+    height: auto; /* Responsif */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,7 +62,8 @@ body {
 }
 
 .atas img {
-    height: 25vh; /* Responsive height */
+    max-width: 100%; /* Responsif */
+    height: auto; /* Responsif */
     margin-bottom: 20px;
     padding: 20px 30px;
     background-color: white;
@@ -69,7 +72,7 @@ body {
 }
 
 .atas h2 {
-    font-size: 2em; /* Adjust font size */
+    font-size: 2em; /* Ukuran font responsif */
     padding: 20px 30px;
     background-color: white;
     border-radius: 20px;
@@ -85,16 +88,16 @@ body {
     margin: 20px 0;
     border-radius: 20px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
-    width: 90%;
-    max-width: 800px;
+    width: 90%; /* Responsif */
+    max-width: 800px; /* Batas lebar maksimum */
     margin-left: auto;
     margin-right: auto;
 }
 
 .foto {
-    width: 90%;
+    width: 90%; /* Responsif */
     padding-top: 30px;
-    max-width: 400px;
+    max-width: 400px; /* Batas lebar maksimum */
 }
 
 /* Media Queries */
@@ -102,24 +105,24 @@ body {
     .atas img, .atas h2, .kartu-ucapan {
         width: 100%;
         margin: 10px 0;
-        font-size: 1.2em;
+        font-size: 1.2em; /* Ukuran font responsif */
     }
 
     .atas img {
-        height: 20vh; /* Responsive height */
+        height: 20vh; /* Responsif */
     }
 
     .kartu-ucapan {
         padding: 15px;
-        font-size: 1em;
+        font-size: 1em; /* Ukuran font responsif */
     }
 
     .open .card img {
-        height: 8vw; /* Responsive height */
+        height: 8vw; /* Responsif */
     }
 
     .open .card h3 {
-        font-size: 1em;
+        font-size: 1em; /* Ukuran font responsif */
     }
 }
 
@@ -127,13 +130,14 @@ body {
     .atas img, .atas h2, .kartu-ucapan {
         width: 100%;
         margin: 5px 0;
-        font-size: 1em;
+        font-size: 1em; /* Ukuran font responsif */
     }
 
     .atas img {
-        height: 15vh; /* Responsive height */
+        height: 15vh; /* Responsif */
     }
 
     .kartu-ucapan {
         padding: 10px;
-        font-size: 0.
+        font-size: 0.9em;
+    }
