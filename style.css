@@ -22,10 +22,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: center;
     justify-content: center;
     z-index: 1;
-    transition: 0.5s all ease;
+    transition: opacity 0.5s ease;
 }
 
 .open h2 {
@@ -49,6 +48,7 @@ body {
 
 .open .card img {
     height: 100px;
+    cursor: pointer;
 }
 
 .atas {
@@ -58,13 +58,13 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 20px;
+    padding: 20px;
 }
 
 .atas img {
     height: 200px;
     margin-bottom: 20px;
-    padding: 20px 30px;
+    padding: 20px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 10px 30px rgba(0, 0, 0, 0.2);
@@ -72,7 +72,7 @@ body {
 
 .atas h2 {
     font-size: 1.5em;
-    padding: 20px 30px;
+    padding: 20px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 10px 30px rgba(0, 0, 0, 0.2);
@@ -85,13 +85,11 @@ body {
     font-weight: bold;
     font-size: 1.2em;
     padding: 20px;
-    margin: 20px 0;
+    margin: 20px auto;
     border-radius: 20px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
     width: 90%;
     max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .foto {
